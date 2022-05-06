@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Great+Vibes&display=swap');
+
+/* @font-face {
+    font-family: 'Akaya Telivigala', cursive;
+    src: url();
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    height: 100vh;
+}
+.wrap{
+    display: flex;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.ssajs{
+    background-color: red;
+    width: 200px;
+    height: 280px;
+    
+}
+.left{
+    transform: rotate(-50deg) translateX(88px);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    box-shadow: -5px 5px 20px 0px #848282;
+}
+.right{
+    transform: rotate(50deg) translateX(-88px);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+@keyframes example {
+    0%   {
+        transform: rotateX(-20deg) rotateY(15deg);
+    }
+    100%  {
+        transform: rotateX(20deg) rotateY(-15deg);
+    }
+  }
+h2{
+    /* font-family: 'Akaya Telivigala', cursive; */
+font-family: 'Great Vibes', cursive;
+    font-size:50px;
+}
